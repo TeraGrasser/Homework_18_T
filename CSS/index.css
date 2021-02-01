@@ -1,0 +1,134 @@
+body {
+  background-color: #000;
+  max-width: 1680px;
+  margin:0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color:#CECECE
+}
+
+/* HEADER SECTION */
+.nav-link {   
+  color:#CECECE
+  }
+
+.nav-link:hover {
+ color:#666;
+}
+
+a.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a.nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+    color:white;
+  }
+/* HERO SECTION */
+.jumbotron {
+  padding:0;
+  background-color: #000;
+}
+.custom-order {
+  order: 0;
+}
+
+.custom-order img {
+  margin:0 auto;
+  display:block;
+}
+
+.pad-img {
+  width:100%;
+}
+.row {
+  color: #CECECE;
+}
+
+@media (min-width: 768px) { 
+  .pad-img {
+    order: 2;
+  }
+  .pad-img img {
+    display:block;
+    width:80%;
+    height:auto;
+  }
+ }
+
+@media (min-width: 768px) { 
+  .custom-order{
+    order: 2;
+  }
+  .custom-order img {
+    display:block;
+    width:80%;
+    height:auto;
+  }
+  .nav {
+    margin-top:75px;
+
+  }
+ }
+
+
+
+ .hello {
+  font-size: 71pt;
+}
+.sub { 
+  font-size: 32pt;
+}
+
+button {
+  background-color:  #2790A5;
+  font-size:12pt; 
+  font-family: Helvetica, Arial, sans-serif;
+  width: 225px;
+  height: 56px;
+  color: white;
+  display: block;
+  margin: 50px auto 0;
+  border: none;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* FOOTER SECTION */
+.footer {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+}
+
+.footer-item {
+  padding: 25px;
+}
+
+/* .email {
+  outline:solid;
+  outline-color: purple;
+}
+
+.linkedin {
+  outline:solid;
+  outline-color: orange;
+}
+
+.instagram {
+  outline:solid;
+  outline-color: blue;
+}
+ */
